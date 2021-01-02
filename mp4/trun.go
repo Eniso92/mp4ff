@@ -77,7 +77,7 @@ func DecodeTrun(hdr *boxHeader, startPos uint64, r io.Reader) (Box, error) {
 func CreateTrun() *TrunBox {
 	trun := &TrunBox{
 		Version:          1,     // Signed composition_time_offset
-		flags:            0xf01, // Data offset and all sample data present
+		flags:            0x201, // Data offset and all sample data present
 		sampleCount:      0,
 		DataOffset:       0,
 		firstSampleFlags: 0,
